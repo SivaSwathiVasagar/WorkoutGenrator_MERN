@@ -1,0 +1,291 @@
+* body {
+  margin: 5px;
+  padding: 0;
+  background-image: url("./assets/gym.jpeg");
+  background-size: cover;
+}
+.Header {
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  border-radius: 30px;
+  background: #370617;
+  color: white;
+  box-shadow: 3px 3px 4px 0px rgba(118, 117, 117, 0.25) inset, 4px 4px 2px 0px rgba(121, 121, 121, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
+}
+.Home {
+  height: 50%;
+  background: rgba(255, 220, 220, 0.82);
+  padding: 5px;
+}
+
+.Home >h2 {
+ text-align: center;
+ font-size: 1.3em;
+}
+.Home >h3 {
+  text-align: center;
+ }
+.Home >p {
+  font-size: 1.1em;
+  margin-left: 10px;
+  text-align: center;
+}
+.Nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background-color: #6a040f;
+  padding: 15px;
+  font-size: 1.5em;
+  border-radius: 95px 95px 0 0  ;
+  box-shadow: 3px 3px 4px 0px rgba(118, 117, 117, 0.25) inset, 4px 4px 2px 0px rgba(121, 121, 121, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.Nav a {
+  text-decoration: none;
+  color: white;
+}
+ h1 {
+  text-align: center;
+}
+
+.Form{
+  margin-top: 20px;
+  margin-left: 10px;
+  gap: 10%;
+  text-align: center;
+}
+
+input[type="submit"] {
+ margin-left: 5px;
+ background-color:  #6a040f;
+ color: #ffffff;
+ padding: 5px 10px;
+ border: darkgray;
+ cursor: pointer;
+}
+
+label {
+  color: #6a040f;
+  font-weight: bold;
+  font-size: large;
+}
+
+.Blog{
+  background: rgba(255, 220, 220, 0.82);
+  padding: 20px;
+}
+.Blog>h3{
+  color: #6a040f;
+  font-weight: larger;
+}
+.Blog>h4{
+  color: #6a040f;
+  font-weight: bolder;
+}
+
+.GetExercise{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+.ExerciseList{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px;
+}
+.AllExercise {
+  line-height: 0.5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(200, 135, 135, 0.82);
+  width: 450px;
+  box-shadow: 3px 3px 4px 0px rgba(176, 176, 176, 0.25) inset, 4px 4px 2px 0px rgba(182, 181, 181, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: transform 0.2s ease-in-out;
+ }
+ .AllExercise:hover {
+   transform: scale(1.05); 
+   background-color: #6a040f;
+   color: white;
+ }
+.About {
+  background: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  padding: 20px;
+  color: white;
+}
+
+a:visited{
+  color: rgb(252, 252, 252);
+  background-color: transparent;
+}
+a:hover{
+  color: rgb(255, 173, 202);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgba(229, 63, 63, 0.82);
+  background-color: transparent;
+  text-decoration: underline;
+}
+.Nav .active {
+  color: rgb(255, 173, 202);
+}
+.About >img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.About >h3{
+  color: rgb(255, 173, 202);
+}
+.Footer{
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .Header {
+    font-size: 0.7em;
+  }
+  .Nav {
+    font-size: 1em;
+  }
+  .ExerciseList{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 30px;
+    max-width: 80%;
+  }
+.AllExercise {
+    line-height: 1.3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    /* margin: 50px; */
+    background: rgba(200, 135, 135, 0.82);
+    word-wrap: break-word;
+    width: 300px;
+  }
+}
+
+/* Style the BMI calculator container */
+
+.BMI{
+ 
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.BMIForm {
+  background: rgba(255, 220, 220, 0.82);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* text-align: center; */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Style the form header */
+.BMI h2 {
+ color: #6a040f;
+  /* font-size: 24px; */
+  margin-bottom: 20px;
+}
+
+/* Style the form elements */
+.BMI form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BMI label {
+  font-size: 20px;
+  margin: 8px 0;
+  color:  #6a040f;
+}
+
+.BMI input[type="number"],
+select {
+  width: fit-content;
+  padding: 10px;
+  margin: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Style the Calculate button */
+.BMI button {
+  background-color: #6a040f;
+  color: #fff;
+  border: darkgray;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease; 
+}
+
+.BMI button:hover {
+  background-color:  #ab1726;
+}
+
+/* Style the result display */
+.BMI #result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #872222;
+}
+
+/* Style the BMI category list */
+.BMIRange {
+  margin-top: 20px;
+}
+
+.BMI h3 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.BMIRange ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.BMIRange li {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.BMI .input_field {
+display: flex;
+flex-direction: row;
+}
+.BMI_Info{
+  background: rgba(252, 184, 184, 0.82);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+
+}
+
