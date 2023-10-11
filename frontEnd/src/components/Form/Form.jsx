@@ -36,7 +36,8 @@ export default function Form(props) {
           <option value="Biceps">Biceps</option>
           <option value="Abs">Abs</option>
         </select>
-        <input type="submit" value="submit" />
+        {/* <input type="submit" value="submit"  /> */}
+        <input type="submit" value="Submit" className="SubmitButton"></input>
       </form>
     </div>
   );

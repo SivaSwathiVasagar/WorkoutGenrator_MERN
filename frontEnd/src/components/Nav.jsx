@@ -16,6 +16,9 @@ export default function Nav() {
       <NavLink to="/workoutGenerator/bmi">
         <div>BMI</div>
       </NavLink>
+      <NavLink to="/workoutGenerator/workout-log">
+        <div>WorkoutLog</div>
+      </NavLink>
     </div>
   );
 }

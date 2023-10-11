@@ -57,15 +57,37 @@
   gap: 10%;
   text-align: center;
 }
-
-input[type="submit"] {
+/******  OLD CSS PROP FOR BUTTON
+/* input[type="submit"] {
  margin-left: 5px;
  background-color:  #6a040f;
  color: #ffffff;
  padding: 5px 10px;
  border: darkgray;
  cursor: pointer;
+ border-radius: 4px;
+ cursor: pointer;
+ font-size: 15px;
+ transition: background-color 0.3s ease; 
+} */
+
+/******  NEW CSS PROP FOR BUTTON ****/
+.SubmitButton {
+  background-color: #6a040f;
+  color: #fff;
+  border: darkgray;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s ease; 
 }
+
+.SubmitButton:hover {
+  background-color: #ab1726;
+}
+
 
 label {
   color: #6a040f;
@@ -288,4 +310,97 @@ flex-direction: row;
   margin: 0 10px;
 
 }
+/****** Workout log CSS ******/
+.WorkoutLog{
+  background: rgba(255, 220, 220, 0.82);
+  padding: 20px;
+  text-align: center;
+}
+.WorkoutLog input[type="number"],
+select {
+  width: fit-content;
+  padding: 10px;
+  margin: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.WorkoutLog form{
+  margin-bottom: 20px;
+}
+
+.WorkoutLog .CrudButtons {
+  background-color: #6a040f;
+  color: #fff;
+  border: darkgray;
+  padding: 10px;
+  margin: 10px ;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease; 
+}
+
+.WorkoutLog .CrudButtons:hover {
+  background-color: #ab1726;
+}
+
+.WorkoutLog .SavedWorkouts
+{
+  line-height: 0.5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background: rgba(210, 128, 128, 0.82);
+  width: 450px;
+  box-shadow: 3px 3px 4px 0px rgba(176, 176, 176, 0.25) inset, 4px 4px 2px 0px rgba(182, 181, 181, 0.25) inset, -4px -4px 1px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: transform 0.2s ease-in-out;
+}
+.WorkoutLog .MapWorkouts{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.WorkoutLog 
+  input[type="text"] {
+  padding-block: 1px;
+  padding-inline: 2px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Create:disabled {
+  background-color: #645e5e; 
+  cursor: not-allowed; 
+  pointer-events: none; 
+}
+
+.WorkoutLog button,
+.Create {
+  background-color: #6a040f;
+  color: #fff;
+  border: darkgray;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Align text to the center */
+}
+
+.WorkoutLog button:hover,
+.Create:hover {
+  background-color: #ab1726;
+}
+
+.Create {
+  margin: 20px; /* Adjust margin values for spacing */
+}
+
 
