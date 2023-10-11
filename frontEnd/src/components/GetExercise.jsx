@@ -53,7 +53,7 @@ export default function GetExercise({ exercises }) {
     );
   };
   const loading = () => {
-    return <h2>No excercise to Display</h2>;
+    return <h2>No exercise to Display</h2>;
   };
 
   //Ternary operator will determine which functions JSX we will return
