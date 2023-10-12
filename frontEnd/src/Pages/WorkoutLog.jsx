@@ -44,6 +44,10 @@ const WorkoutLog = () => {
       reps: workout.reps,
       experienceType: workout.experienceType,
     });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   const handleCancelEdit = () => {
